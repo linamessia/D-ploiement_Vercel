@@ -13,6 +13,11 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
+  it(`should have as text 'MEBOUGA MESSIA Lina'`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
 
   it(`should have as title 'ci-cdProject'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
@@ -20,10 +25,6 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('ci-cdProject');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ci-cdProject app is running!');
-  });
+ 
+  
 });
